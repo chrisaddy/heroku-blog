@@ -1,0 +1,12 @@
+{%- extends "bootstrap/base.html" %} 
+{% block title %}Algorhythm's Data Science Portal{% endblock %} 
+{% import "bootstrap/fixes.html" as fixes %} 
+{% block head %} 
+{{super()}} 
+{{fixes.ie8()}} 
+{%- endblock %} 
+
+{% import "bootstrap/utils.html" as utils %} 
+{% block navbar %} 
+{{nav.navbar.render()}} 
+{% endblock %}
